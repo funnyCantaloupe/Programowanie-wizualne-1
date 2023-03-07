@@ -20,13 +20,12 @@ namespace Programowanie_wizualne_1
         private DateTime _start;
         private void label1_Click(object sender, EventArgs e)
         {
-            _start = DateTime.Now;
-            timer1.Start();
+            
         }
 
         private void label2_Click_1(object sender, EventArgs e)
         {
-            timer1.Stop();
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -37,7 +36,19 @@ namespace Programowanie_wizualne_1
 
         private void label3_Click(object sender, EventArgs e)
         {
-
+           
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            _start = DateTime.Now;
+            timer1.Start();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            timer1.Stop();
+        }
+
     }
 }
